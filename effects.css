@@ -1,0 +1,89 @@
+/* Fade-in animation: makes sections appear smoothly when the page loads. */
+.fade-in { animation: fadeIn 0.9s ease-in; }
+
+/* Keyframes for fade-in: starts lower and transparent, then moves into place. */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Zoom effect: prepares images for smooth movement and shadow on hover. */
+.zoom-effect { transition: transform 0.35s ease, filter 0.35s ease, box-shadow 0.35s ease; }
+
+/* Image hover effect: makes images grow slightly, brighten, and cast a red shadow. */
+.zoom-effect:hover {
+    transform: scale(1.05) rotate(-1deg);
+    filter: brightness(1.08) contrast(1.08);
+    box-shadow: 0 12px 28px rgba(219,0,7,0.35);
+}
+
+/* Floating effect: gives selected images a gentle up and down movement. */
+.float-effect { animation: floatImage 3.5s ease-in-out infinite; }
+
+/* Keyframes for floating: moves the image up and then back down. */
+@keyframes floatImage {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Gold glow: adds a gold shadow around important images. */
+.gold-glow { box-shadow: 0 0 25px rgba(212,175,55,0.7); }
+
+/* Reveal card: prepares cards for smooth hover movement. */
+.reveal-card { transition: transform 0.3s ease, background 0.3s ease; }
+
+/* Reveal card hover: lifts the card upward and changes its background color. */
+.reveal-card:hover { transform: translateY(-8px); background: #fff1f1; }
+
+/* Pulse button: makes important buttons glow repeatedly. */
+.pulse-button { animation: pulse 1.8s infinite; }
+
+/* Keyframes for pulse: creates a growing red shadow around the button. */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(219,0,7,0.6); }
+    70% { box-shadow: 0 0 0 12px rgba(219,0,7,0); }
+    100% { box-shadow: 0 0 0 0 rgba(219,0,7,0); }
+}
+
+/* Slide caption: places a dark transparent caption under the slider image. */
+.slide-caption {
+    margin-top: -55px;
+    background: rgba(0,0,0,0.65);
+    color: white;
+    padding: 12px;
+    position: relative;
+    border-radius: 0 0 18px 18px;
+}
+
+/* Badge style: creates small gold labels in the hero section. */
+.badge {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #d4af37;
+    color: #111;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+/* Flip card base: prepares player cards for a small 3D hover effect. */
+.flip-card {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Flip card hover: tilts the card slightly and lifts it upward. */
+.flip-card:hover {
+    transform: rotateY(6deg) translateY(-8px);
+    box-shadow: 0 16px 32px rgba(6,54,114,0.28);
+}
+
+/* Gallery image cursor: shows that gallery pictures are clickable. */
+.gallery-img { cursor: pointer; }
+
+/* Hero section background: gives the homepage hero area a soft red-white gradient. */
+.hero-section { background: linear-gradient(135deg, #ffffff, #fff0f0); }
+
+/* Dark mode hero section: changes the hero background when dark mode is active. */
+.dark-mode .hero-section { background: linear-gradient(135deg, #252525, #111111); }

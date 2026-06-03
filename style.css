@@ -1,0 +1,317 @@
+/* Universal selector: this makes width and padding easier to control for every element. */
+* { box-sizing: border-box; }
+
+/* Body section: controls the whole page background, main text color, and font style. */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff5f5;
+    color: #222222;
+}
+
+/* Header section: styles the top menu area with Arsenal red colors, sticky position, and shadow. */
+header {
+    background: linear-gradient(135deg, #db0007, #8b0000);
+    color: white;
+    text-align: center;
+    padding: 24px 16px 18px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+/* Heading styles: controls the size and spacing of main titles. */
+h1 { margin: 8px 0; font-size: 38px; }
+h2 { color: #db0007; font-size: 28px; margin-top: 0; }
+h3 { color: #063672; }
+p { font-size: 17px; line-height: 1.6; }
+
+/* Tagline: makes the small sentence under the title gold. */
+#tagline { color: #ffd700; font-size: 19px; margin: 4px; }
+
+/* Navigation section: creates spacing above the menu links. */
+nav { margin-top: 18px; }
+
+/* Navigation links and dark mode button: gives them the same button style. */
+nav a, .nav-button {
+    display: inline-block;
+    color: white;
+    background-color: #063672;
+    text-decoration: none;
+    padding: 10px 17px;
+    margin: 5px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Hover effect for menu buttons: changes the color when the mouse is on the button. */
+nav a:hover, .nav-button:hover { background-color: #d4af37; color: black; }
+
+/* Main section: creates white content boxes with rounded corners and shadow. */
+.main-section {
+    background-color: white;
+    width: 86%;
+    max-width: 1050px;
+    margin: 32px auto;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.14);
+    text-align: center;
+}
+
+/* Hero grid: places text and image side by side on the homepage. */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 25px;
+    align-items: center;
+    text-align: left;
+}
+
+/* Hero card: blue text box inside the homepage hero section. */
+.hero-card {
+    background: #063672;
+    color: white;
+    padding: 25px;
+    border-radius: 18px;
+}
+
+/* Makes the hero card heading gold instead of red. */
+.hero-card h2 { color: #ffd700; }
+
+/* Main and slider images: makes large images fit nicely and keeps them cropped cleanly. */
+.main-image, .slider-image {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 6px solid #db0007;
+}
+
+/* Manager and logo images: controls their size and border. */
+#manager-image, #logo-image {
+    width: 250px;
+    max-width: 90%;
+    border-radius: 16px;
+    border: 5px solid #db0007;
+}
+
+/* Grid layouts: automatically create responsive columns for gallery, players, and feature cards. */
+.gallery-grid, .player-grid, .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+
+/* Card design: styles the individual image cards. */
+.photo-card, .player-card, .feature-card {
+    background: #fffafa;
+    border: 1px solid #ffd1d1;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.1);
+}
+
+/* Card images: makes all gallery and player images same size. */
+.photo-card img, .player-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 4px solid #db0007;
+}
+
+/* List box: styles any unordered list area with a red left border. */
+.list-box {
+    width: 330px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: left;
+    border-left: 6px solid #db0007;
+}
+
+/* List item spacing and size. */
+ul li { margin: 10px; font-size: 17px; }
+
+/* Table style: controls width, spacing, and collapsed borders. */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+/* Table cells: adds padding and red borders. */
+td, th {
+    padding: 13px;
+    border: 1px solid #db0007;
+}
+
+/* Table header row: makes table headings blue with white text. */
+th { background: #063672; color: white; }
+
+/* Form box: styles contact, voting, and prediction forms. */
+form {
+    width: 430px;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #f2f2f2;
+    border-radius: 18px;
+    text-align: left;
+}
+
+/* Form labels: makes input titles bold. */
+label { font-weight: bold; }
+
+/* Form input fields: makes text boxes, textarea, and select boxes full width and neat. */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* Textarea height: gives more space for longer messages. */
+textarea { height: 110px; }
+
+/* Main red buttons used in forms and slider controls. */
+.send-button, .action-button {
+    background-color: #db0007;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 22px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button hover effect: changes red buttons to Arsenal blue. */
+.send-button:hover, .action-button:hover { background-color: #063672; }
+
+/* Output boxes: where JavaScript writes results for forms, quiz, and predictions. */
+#form-output, #vote-result, #quiz-result, #prediction-output {
+    background: #fff;
+    border-left: 6px solid #d4af37;
+    padding: 15px;
+    margin-top: 18px;
+    border-radius: 12px;
+    font-size: 17px;
+}
+
+/* Slider box: keeps slider image, caption, buttons, and dots together. */
+.slider-box { position: relative; text-align: center; }
+
+/* Slider controls: creates space around the previous/next buttons and dots. */
+.slider-controls { margin-top: 15px; }
+.slider-controls button { margin: 5px; }
+
+/* Slider dots: small circles that show which slide is active. */
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Active slider dot: red color shows the current slide. */
+.dot.active { background: #db0007; }
+
+/* Footer: styles the bottom section of the website. */
+footer {
+    background-color: #063672;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+/* Dark mode body: JavaScript adds this class to make the page dark. */
+.dark-mode { background: #161616; color: #f5f5f5; }
+
+/* Dark mode cards: changes white content boxes to dark grey. */
+.dark-mode .main-section, .dark-mode .photo-card, .dark-mode .player-card, .dark-mode .feature-card { background: #252525; color: #f5f5f5; }
+
+/* Dark mode forms: makes form boxes darker. */
+.dark-mode form { background: #2d2d2d; }
+
+/* Dark mode inputs: makes input fields readable in dark mode. */
+.dark-mode input, .dark-mode textarea, .dark-mode select { background: #111; color: white; border-color: #555; }
+
+/* Responsive design: changes layout on phones and small screens. */
+@media (max-width: 760px) {
+    /* On small screens, hero text and image stack vertically instead of side by side. */
+    .hero-grid { grid-template-columns: 1fr; text-align: center; }
+
+    /* Smaller title size for phones. */
+    h1 { font-size: 30px; }
+
+    /* Wider content boxes on phones. */
+    .main-section { width: 94%; padding: 20px; }
+}
+
+/* Small feature image style used on the homepage cards. */
+.mini-feature {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 4px solid #db0007;
+    margin-bottom: 10px;
+}
+
+/* Preview image: used for the uploaded fan photo preview. */
+.preview-image {
+    width: 380px;
+    max-width: 95%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 5px solid #db0007;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+/* Lightbox background: hidden full-screen overlay for enlarged gallery images. */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.88);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Lightbox image: enlarged version of the clicked gallery image. */
+.lightbox img {
+    width: 85%;
+    max-width: 1000px;
+    max-height: 82vh;
+    object-fit: contain;
+    border: 6px solid #d4af37;
+    border-radius: 18px;
+}
+
+/* Close lightbox button: the X symbol in the top right corner. */
+#close-lightbox {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: white;
+    font-size: 48px;
+    cursor: pointer;
+}

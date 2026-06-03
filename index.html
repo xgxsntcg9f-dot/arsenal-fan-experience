@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This part gives the browser information about the page. It does not show on the website. -->
+    <meta charset="UTF-8">
+    <title>Arsenal Fan Experience - Home</title>
+
+    <!-- This connects the main CSS file. It controls the main colors, layout, spacing, and page design. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- This connects the second CSS file. It controls special effects like fade, zoom, glow, and button animation. -->
+    <link rel="stylesheet" href="effects.css">
+</head>
+<body>
+
+<!-- Header section: this is the top part of every page with the title, tagline, menu, and dark mode button. -->
+<header>
+    <h1>Arsenal Fan Experience</h1>
+
+    <!-- Tagline section: this short sentence appears under the website title. -->
+    <p id="tagline">Football • Passion • North London</p>
+
+    <!-- Navigation section: these links move the user from one page to another. -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="players.html">Players</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="fanvote.html">Fan Zone</a>
+        <a href="contact.html">Contact</a>
+
+        <!-- JavaScript uses this button to turn dark mode on and off. -->
+        <button id="theme-button" class="nav-button">Dark Mode</button>
+    </nav>
+</header>
+
+<!-- Hero section: this is the first large section users see on the homepage. -->
+<section class="main-section fade-in hero-section">
+    <div class="hero-grid">
+
+        <!-- Hero text card: this introduces the purpose of the website. -->
+        <div class="hero-card">
+            <h2>Welcome to the Arsenal Fan Experience</h2>
+            <p><strong>Built for fans who live the matchday feeling.</strong></p>
+            <p>Explore Arsenal moments, player cards, match predictions, fan votes, and a clean photo gallery with smooth visual effects.</p>
+
+            <!-- Badge labels: these make the hero section look more modern and organized. -->
+            <span class="badge">Matchday</span>
+            <span class="badge">Fan Zone</span>
+            <span class="badge">Gallery</span>
+        </div>
+
+        <!-- Hero image: this image gets a zoom effect and gold glow from CSS. -->
+        <img class="main-image zoom-effect gold-glow" src="matchday.webp" alt="Arsenal players celebrating at Emirates Stadium">
+    </div>
+</section>
+
+<!-- Slider section: JavaScript changes the image and caption here. -->
+<section class="main-section fade-in">
+    <h2>Matchday Slider</h2>
+    <div class="slider-box">
+
+        <!-- This image changes when the user clicks Previous or Next, and it also changes automatically. -->
+        <img id="slide-image" class="slider-image zoom-effect" src="matchday.webp" alt="Arsenal Slider">
+
+        <!-- This caption changes at the same time as the slider image. -->
+        <div id="slide-text" class="slide-caption">Arsenal matchday celebration</div>
+
+        <!-- Slider controls: JavaScript adds click actions to these buttons and dots. -->
+        <div class="slider-controls">
+            <button id="prev-slide" class="action-button">Previous</button>
+            <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <button id="next-slide" class="action-button">Next</button>
+        </div>
+    </div>
+</section>
+
+<!-- Featured section: this shows three important Arsenal moments in card form. -->
+<section class="main-section fade-in">
+    <h2>Featured Moments</h2>
+    <div class="feature-grid">
+
+        <!-- Feature card 1: shows an important player image. -->
+        <div class="feature-card reveal-card">
+            <img class="mini-feature" src="saka.jpg" alt="Bukayo Saka">
+            <h3>Star Player</h3>
+            <p>Focus on young talent and confidence.</p>
+        </div>
+
+        <!-- Feature card 2: shows the team squad image. -->
+        <div class="feature-card reveal-card">
+            <img class="mini-feature" src="team-squad.avif" alt="Arsenal squad">
+            <h3>Squad Unity</h3>
+            <p>A team identity built around energy and belief.</p>
+        </div>
+
+        <!-- Feature card 3: shows a trophy/poster style image. -->
+        <div class="feature-card reveal-card">
+            <img class="mini-feature" src="champions-poster.jpeg" alt="Arsenal poster">
+            <h3>Winning Dream</h3>
+            <p>A bold visual style for a bold fan page.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer section: this is the bottom part of the webpage. -->
+<footer><p>© 2026 Arsenal Fan Experience</p></footer>
+
+<!-- This connects the JavaScript file. It makes the slider, dark mode, quiz, forms, and gallery lightbox work. -->
+<script src="script.js"></script>
+</body>
+</html>

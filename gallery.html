@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup and CSS file links. -->
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="effects.css">
+</head>
+<body>
+
+<!-- Header section: same menu across pages for consistency. -->
+<header>
+    <h1>Arsenal Fan Experience</h1>
+    <p id="tagline">Football • Passion • North London</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="players.html">Players</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="fanvote.html">Fan Zone</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-button" class="nav-button">Dark Mode</button>
+    </nav>
+</header>
+
+<!-- Gallery section: displays many images in a responsive grid layout. -->
+<section class="main-section fade-in">
+    <h2>Arsenal Photo Gallery</h2>
+
+    <!-- Gallery grid: each photo card contains an image and a short heading. -->
+    <div class="gallery-grid">
+        <div class="photo-card"><img class="zoom-effect gallery-img" src="matchday.webp" alt="Matchday celebration"><h3>Matchday Celebration</h3></div>
+        <div class="photo-card"><img class="zoom-effect gallery-img" src="saka.jpg" alt="Bukayo Saka"><h3>Saka Spotlight</h3></div>
+        <div class="photo-card"><img class="zoom-effect gallery-img" src="team-squad.avif" alt="Team squad"><h3>Squad Power</h3></div>
+        <div class="photo-card"><img class="zoom-effect gallery-img" src="arsenal-duel.avif" alt="Arsenal match action"><h3>Match Action</h3></div>
+        <div class="photo-card"><img class="zoom-effect gallery-img" src="champions-poster.jpeg" alt="Champions Poster"><h3>Champions Design</h3></div>
+        <div class="photo-card"><img class="zoom-effect gallery-img" src="arteta.jpeg" alt="Manager"><h3>Manager Spotlight</h3></div>
+        <div class="photo-card"><img class="zoom-effect gallery-img" src="celebration.jpg" alt="Celebration"><h3>Team Moment</h3></div>
+        <div class="photo-card"><img class="zoom-effect gallery-img" src="arsenal-logo.png" alt="Logo"><h3>Club Identity</h3></div>
+    </div>
+</section>
+
+<!-- Quiz section: JavaScript checks the answer and displays a result. -->
+<section class="main-section fade-in">
+    <h2>Quick Arsenal Quiz</h2>
+    <p>Question: Arsenal is based in which part of London?</p>
+    <input id="quiz-answer" type="text" placeholder="Type your answer here">
+    <button id="quiz-button" class="action-button pulse-button">Check Answer</button>
+    <div id="quiz-result">Your result will appear here.</div>
+</section>
+
+<!-- Lightbox section: hidden by default; JavaScript shows it when a gallery image is clicked. -->
+<div id="lightbox" class="lightbox">
+    <span id="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="Large gallery image">
+</div>
+
+<!-- Footer section. -->
+<footer><p>Gallery with image effects</p></footer>
+
+<!-- JavaScript file for gallery click effect, quiz, and dark mode. -->
+<script src="script.js"></script>
+</body>
+</html>

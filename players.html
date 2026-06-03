@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup and CSS connections. -->
+    <meta charset="UTF-8">
+    <title>Players</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="effects.css">
+</head>
+<body>
+
+<!-- Header and navigation menu. -->
+<header>
+    <h1>Arsenal Fan Experience</h1>
+    <p id="tagline">Football • Passion • North London</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="players.html">Players</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="fanvote.html">Fan Zone</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-button" class="nav-button">Dark Mode</button>
+    </nav>
+</header>
+
+<!-- Player gallery section: uses cards to show players, manager, and team moments. -->
+<section class="main-section fade-in">
+    <h2>Player and Manager Gallery</h2>
+
+    <!-- Player grid: CSS automatically arranges these cards nicely on large and small screens. -->
+    <div class="player-grid">
+        <div class="player-card reveal-card flip-card"><img class="zoom-effect" src="saka.jpg" alt="Bukayo Saka"><h3>Bukayo Saka</h3><p>Creativity, courage, and big-game confidence.</p></div>
+        <div class="player-card reveal-card flip-card"><img class="zoom-effect" src="team-squad.avif" alt="Arsenal Squad"><h3>Squad Energy</h3><p>Team spirit and togetherness.</p></div>
+        <div class="player-card reveal-card flip-card"><img class="zoom-effect" src="arteta.jpeg" alt="Mikel Arteta"><h3>Mikel Arteta</h3><p>Leadership and discipline from the touchline.</p></div>
+        <div class="player-card reveal-card flip-card"><img class="zoom-effect" src="arsenal-duel.avif" alt="Arsenal action"><h3>Match Intensity</h3><p>Fight, speed, and pressure in key moments.</p></div>
+        <div class="player-card reveal-card flip-card"><img class="zoom-effect" src="celebration.jpg" alt="Team Celebration"><h3>Celebration</h3><p>The emotion after a big Arsenal moment.</p></div>
+        <div class="player-card reveal-card flip-card"><img class="zoom-effect" src="arsenal-logo.png" alt="Arsenal Crest"><h3>The Crest</h3><p>The identity that connects supporters.</p></div>
+    </div>
+</section>
+
+<!-- Table section: this explains the different team roles in a clear structure. -->
+<section class="main-section fade-in">
+    <h2>Player Strengths Table</h2>
+    <table>
+        <tr><th>Role</th><th>Strength</th><th>Fan Comment</th></tr>
+        <tr><td>Manager</td><td>Discipline</td><td>Improved the team structure</td></tr>
+        <tr><td>Attackers</td><td>Speed and creativity</td><td>Exciting to watch</td></tr>
+        <tr><td>Midfield</td><td>Control</td><td>Connects defense and attack</td></tr>
+        <tr><td>Defense</td><td>Organisation</td><td>Keeps the team balanced</td></tr>
+    </table>
+</section>
+
+<!-- Footer section. -->
+<footer><p>Arsenal player focus page</p></footer>
+
+<!-- JavaScript connection for dark mode. -->
+<script src="script.js"></script>
+</body>
+</html>

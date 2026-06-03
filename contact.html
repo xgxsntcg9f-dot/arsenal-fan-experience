@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page setup and CSS file links. -->
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="effects.css">
+</head>
+<body>
+
+<!-- Header and navigation menu. -->
+<header>
+    <h1>Arsenal Fan Experience</h1>
+    <p id="tagline">Football • Passion • North London</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="players.html">Players</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="fanvote.html">Fan Zone</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-button" class="nav-button">Dark Mode</button>
+    </nav>
+</header>
+
+<!-- Contact form section: collects name, email, message, and photo. It previews the message using JavaScript. -->
+<section class="main-section fade-in">
+    <h2>Contact the Arsenal Fan Page</h2>
+    <form id="contact-form">
+        <label for="fan-name">Name</label>
+        <input id="fan-name" type="text" placeholder="Your name">
+
+        <label for="fan-email">Email</label>
+        <input id="fan-email" type="email" placeholder="your@email.com">
+
+        <label for="fan-message">Message</label>
+        <textarea id="fan-message" placeholder="Write your message"></textarea>
+
+        <!-- File input: lets the user choose an image from their computer. JavaScript displays it as a preview. -->
+        <label for="fan-photo">Upload fan photo</label>
+        <input id="fan-photo" type="file" accept="image/*">
+
+        <button class="send-button" type="submit">Preview Message</button>
+    </form>
+
+    <!-- JavaScript writes the message preview into this div. -->
+    <div id="form-output">Your message preview will appear here.</div>
+</section>
+
+<!-- Photo preview section: starts with a default image, then changes after the user uploads a photo. -->
+<section class="main-section fade-in">
+    <h2>Fan Photo Preview</h2>
+    <p>Show your matchday energy before sending your message.</p>
+    <img id="photo-preview" class="preview-image" src="team-squad.avif" alt="Fan photo preview">
+</section>
+
+<!-- Footer section. -->
+<footer><p>Thanks for visiting my Arsenal page</p></footer>
+
+<!-- JavaScript file: makes the form preview, photo preview, and dark mode work. -->
+<script src="script.js"></script>
+</body>
+</html>

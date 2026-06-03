@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page setup and CSS file links. -->
+    <meta charset="UTF-8">
+    <title>Fan Zone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="effects.css">
+</head>
+<body>
+
+<!-- Header and navigation menu. -->
+<header>
+    <h1>Arsenal Fan Experience</h1>
+    <p id="tagline">Football • Passion • North London</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="players.html">Players</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="fanvote.html">Fan Zone</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-button" class="nav-button">Dark Mode</button>
+    </nav>
+</header>
+
+<!-- Fan vote section: the user selects a player/person and gives a reason. JavaScript shows the vote on the page. -->
+<section class="main-section fade-in">
+    <h2>Fan Player Vote</h2>
+    <form id="vote-form">
+        <label for="player-choice">Choose one person</label>
+        <select id="player-choice">
+            <option>Martin Ødegaard</option>
+            <option>Bukayo Saka</option>
+            <option>Declan Rice</option>
+            <option>Mikel Arteta</option>
+            <option>Whole Team</option>
+        </select>
+
+        <label for="vote-reason">Why did you choose them?</label>
+        <textarea id="vote-reason" placeholder="Write your reason"></textarea>
+
+        <!-- Submit button: JavaScript stops the form from refreshing the page and prints the answer below. -->
+        <button class="send-button" type="submit">Submit Vote</button>
+    </form>
+    <div id="vote-result">Your vote will appear here.</div>
+</section>
+
+<!-- Match prediction section: collects predicted score and first scorer. -->
+<section class="main-section fade-in">
+    <h2>Match Prediction</h2>
+    <form id="prediction-form">
+        <label for="score">Predicted score</label>
+        <input id="score" type="text" placeholder="Example: Arsenal 3 - 1 Opponent">
+
+        <label for="scorer">First scorer</label>
+        <input id="scorer" type="text" placeholder="Example: Saka">
+
+        <button class="send-button" type="submit">Save Prediction</button>
+    </form>
+    <div id="prediction-output">Your prediction will appear here.</div>
+</section>
+
+<!-- Footer section. -->
+<footer><p>Fan interaction page</p></footer>
+
+<!-- JavaScript file: makes the vote, prediction form, and dark mode work. -->
+<script src="script.js"></script>
+</body>
+</html>
